@@ -1,55 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Dominic — Full-Stack Web Developer. React, Node.js, PostgreSQL. Portfolio, skills, and contact." />
+  <title>Dominic • Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
-<body>
-    <h1>My Resume</h1>
-<img src="./assets/Dominic.jpg"height="200"/>
-
-    <hr />
-    <h2>About Me</h2>
-    <p> Motivated and tech-savvy individual with hands-on experience in IT support tasks, Excel reporting, and process
-        automation. I have assisted teams in streamlining workflows, creating dashboards, and improving data accuracy.
-        Skilled
-        at troubleshooting hardware and software issues, providing fast support, and learning new tools and technologies
-        quickly. I am passionate about building a career in IT, including networking, system administration, scripting,
-        and data
-        analysis. Adaptable, detail-oriented, and eager to apply my problem-solving skills to contribute effectively in
-        fast-paced,
-        technology-driven environments</p>
-
-    <h2>Education</h2>
-    <p>
-        Canadian University of Bangladesh – Bachelor of Science in Computer Science & Engineering
-    </p>
-    <h2>Work Experience</h2>
-    <p> Collaborated with web and design teams to execute campaigns and track results.</p>
-    <h2>Skills</h2>
-    <ul>
-        <li> Campaign Management, Google Ads, KPI Tracking, Reporting Automation, Excel Dashboards, Data Analysis
-        </li>
-        <li> Python (Web Scraping & Automation), SQL, HTML, CSS, JavaScript (Basics), Web Development Basics, API
-            Integration
-        </li>
-        <li> MS Office Suite, Google Workspace, Google Analytics, Version Control (Git/GitHub Basics)
-        </li>
-        <li> Ableton Live, Sound Design, Mixing & Mastering, VST Plugins
-        </li>
-        <li>
-            Problem Solving, Project Management, Collaboration, Attention to Detail, Time Management
-        </li>
+<header class="site-header">
+    <nav aria-label="Primary">
+         <ul class="nav-list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
+    </nav>
+</header>
+<body>
+  <main>
 
+    <!-- Hero (subtle neutral band; CTA uses blue accent) -->
+    <section class="hero band band-neutral">
+      <div class="container">
+        <h1>Hi, I'm Dominic!</h1>
+        <img class="avatar" src="./assets/dominic.jpg" alt="Portrait of Dominic" loading="eager" decoding="async" />
+        <p class="subtitle">Full Stack Web Developer</p>
+        <a class="cta" href="#contact">Contact Me</a>
+      </div>
+    </section>
 
+    <!-- About (neutral surface) -->
+    <section id="about" class="surface">
+      <div class="container">
+        <h2>About Me</h2>
+        <p class="body-copy">
+          I am a <strong>full-stack developer</strong> with a passion for creating intuitive, efficient, and scalable web applications.
+          With expertise in both <strong>front-end and back-end</strong> technologies, I enjoy bringing ideas to life and solving complex problems.
+          I’ve worked with <strong>React</strong>, <strong>Node.js</strong>, and <strong>MongoDB/PostgreSQL</strong> to build dynamic, user-centric solutions.
+          I thrive in collaborative environments and love learning new tools to deliver high-quality products.
+        </p>
+      </div>
+    </section>
 
+    <!-- Skills (balanced 3-card layout) -->
+    <section id="skills" class="surface-white">
+      <div class="container">
+        <h2>My Skills</h2>
 
+        <ul class="skill-cards">
+          <li>
+            <h3>Front-End</h3>
+            <ul class="chiplist">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li>
+            </ul>
+          </li>
+          <li>
+            <h3>Back-End</h3>
+            <ul class="chiplist">
+              <li>Node.js</li><li>Express.js</li>
+            </ul>
+          </li>
+          <li>
+            <h3>Databases</h3>
+            <ul class="chiplist">
+              <li>MongoDB</li><li>PostgreSQL</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
 
+    <!-- Contact (neutral surface) -->
+    <section id="contact" class="surface">
+      <div class="container">
+        <h2>Get in Touch!</h2>
+        <p class="body-copy">
+          I'm available for freelance projects and full-time opportunities. If you have a project in mind, a question,
+          or just want to connect, feel free to reach out. I’m always excited to discuss new ideas and collaborations.
+        </p>
+        <address>
+          <a class="cta" href="mailto:notmainddomain2@gmail.com">Email Me</a>
+          <a class="cta secondary" href="https://github.com/Dominic-Flame" target="_blank" rel="noopener"
+             aria-label="Open Dominic’s GitHub profile">GitHub</a>
+        </address>
+      </div>
+    </section>
 
+  </main>
+
+  <footer>
+    <p class="copyright">©<span id="year"></span> Dominic — The Full Stack Developer.</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
-<footer>All Coprights Reserved. </footer>
 </html>
